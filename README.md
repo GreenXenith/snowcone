@@ -86,3 +86,16 @@ Syrup can be removed from containers with an empty bucket.
 
 ### Bugs ###
 The liquid level inside the containers is sometimes inaccurate.  
+
+### API ###
+A single function is provided that may be used in other mods.  
+`snowcone.register_flavor(flavor, def)`  
+
+`flavor` is a string.  
+`def` is a table:
+```
+{
+	color = ColorString,
+	alpha = number 0-255 (optional),
+	craftitem = itemstring (optional, needed for obtaining syrup)
+}
